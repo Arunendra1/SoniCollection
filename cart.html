@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SoniCollection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel = "icon" href = "https://img.freepik.com/premium-photo/shopping-cart-icon-concept-cut-out-letters-sale-store-business-simple-minimalistic_63762-2241.jpg?w=1060" 
+        type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <div class="top-nav-bar" >
+        <div class="search-box"  >
+          <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+          <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+       <a href="index.html"> <img class="logo" src="https://img.freepik.com/premium-photo/shopping-cart-icon-concept-cut-out-letters-sale-store-business-simple-minimalistic_63762-2241.jpg?w=1060" ></a>
+             <input type="text" class="form-control">
+          <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+            <li><a href="Account.html">Sign Up</a></li>
+              <li><a href="Account.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+<section class="cart">
+  <div class="small-container cart-page"></div>
+ <table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+     <td>
+            <div class="cart-info">
+      <img src="https://imgs.search.brave.com/-Z7HhLw4igBFq-pGTWESa9LNPTeNp_DrDdix18IkLdQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ibGFjay10c2hp/cnRzLXdpdGgtY29w/eS1zcGFjZV84MTY3/MDItMjQwLmpwZz9z/aXplPTYyNiZleHQ9/anBn">
+      <div><p>Black T-shirt</p>
+          <small>Price: $50.00</small>
+          <div>
+          <a href=""><button type="button" class="btn btn-secondary">Remove</button></a>
+        </div>
+        </div>
+     </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+    </tr>
+    <tr>
+        <td>
+               <div class="cart-info">
+         <img src="https://imgs.search.brave.com/IwR-Zqh7ff3Bd-EXFYk1n_qkg3C1TnssRjjbPQ1JcXo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8w/OS8wNS8yMC8xNC9n/dXktOTI1MDA4XzY0/MC5qcGc">
+         <div><p>Blue T-shirt</p>
+             <small>Price: $40.00</small>
+             <div>
+             <a href=""><button type="button" class="btn btn-secondary">Remove</button></a>
+           </div>
+           </div>
+        </td>
+           <td><input type="number" value="1"></td>
+           <td>$40.00</td>
+       </tr>
+       <tr>
+        <td>
+               <div class="cart-info">
+         <img src="https://imgs.search.brave.com/EqVzqk-N5ZrP19f19SrDxdlEnZVSYCNGqNQdJecD1uI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/OC8xMC8wOC8wMC9z/aGlydC0yNjE5Nzg4/XzY0MC5qcGc">
+         <div><p>White T-shirt</p>
+             <small>Price: $30.00</small>
+             <div>
+             <a href=""><button type="button" class="btn btn-secondary">Remove</button></a>
+           </div>
+           </div>
+        </td>
+           <td><input type="number" value="1"></td>
+           <td>$30.00</td>
+       </tr>
+ </table>
+ <div class="total-price">
+  <table>
+    <tr>
+        <td>Subtotal</td>
+        <td>$120.00</td>
+    </tr>
+    <tr>
+        <td>Tax</td>
+        <td>$35.00</td>
+    </tr>
+    <tr>
+        <td>total</td>
+        <td>$155.00</td>
+    </tr>
+  </table>
+ </div>
+ <a href=""><button type="button" class="btn btn-primary" id="Buy">Buy Now</button></a>
+</section>
+      <section class="footer">
+        <div class="container tex-center">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>Useful Links</h1>
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+              <p>Return Policy</p>
+              <p>Discount Coupons</p>
+            </div>
+            <div class="col-md-3">
+              <h1>Company</h1>
+              <p>About Us</p>
+              <p>Contact Us</p>
+              <p>Career</p>
+              <p>Affiliate</p>
+            </div>
+            <div class="col-md-3">
+              <h1>Follow Us On</h1>
+              <p><i class="fa fa-facebook-official"></i> Facebook</p>
+              <p><i class="fa fa-youtube-play"></i> Youtube</p>
+              <p><i class="fa fa-linkedin"></i> Linkedin</p>
+              <p><i class="fa fa-twitter"></i> Twitter</p>
+            </div>
+            <div class="col-md-3 footer-image" >
+              <h1>Download App</h1>
+              <img src="images/appicon.png">
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Developed By Arunendra Bhardwaj <i class="fa fa-heart-o"></i></p>
+        </div>
+      </section>
+      <script>
+        function openmenu(){
+          document.getElementById("side-menu").style.display="block";
+          document.getElementById("menu-btn").style.display="none";
+          document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu(){
+          document.getElementById("side-menu").style.display="none";
+          document.getElementById("menu-btn").style.display="block";
+          document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SoniCollection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel = "icon" href = "https://img.freepik.com/premium-photo/shopping-cart-icon-concept-cut-out-letters-sale-store-business-simple-minimalistic_63762-2241.jpg?w=1060" 
+        type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+  <div class="top-nav-bar" >
+    <div class="search-box"  >
+      <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+      <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+      <img class="logo" src="https://img.freepik.com/premium-photo/shopping-cart-icon-concept-cut-out-letters-sale-store-business-simple-minimalistic_63762-2241.jpg?w=1060" >
+         <input type="text" class="form-control"/>
+      <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+        <li><a href="Account.html">Sign Up</a></li>
+          <li><a href="Account.html">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+  <section class="header">
+      <div class="side-menu" id="side-menu">
+        <ul>
+          <li>On Sale <i class="fa fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-1</li>
+            <li>Sub Menu-1</li>
+            <li>Sub Menu-1</li>
+            <li>Sub Menu-1</li>
+          </ul>
+        </li>
+          <li>Mobiles <i class="fa fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+          </ul>
+        </li>
+        <li>Computers <i class="fa  fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+          </ul>
+          </li>
+          <li>Books <i class="fa  fa-angle-right"></i>
+            <ul>
+              <li>Sub Menu-4</li>
+              <li>Sub Menu-4</li>
+              <li>Sub Menu-4</li>
+              <li>Sub Menu-4</li>
+            </ul> </li>
+            <li>Fitness <i class="fa  fa-angle-right"></i>
+              <ul>
+                <li>Sub Menu-5</li>
+                <li>Sub Menu-5</li>
+                <li>Sub Menu-5</li>
+                <li>Sub Menu-5</li>
+              </ul> </li>
+              <li>Beby Care <i class="fa  fa-angle-right"></i>
+                <ul>
+                  <li>Sub Menu-6</li>
+                  <li>Sub Menu-6</li>
+                  <li>Sub Menu-6</li>
+                  <li>Sub Menu-6</li>
+                </ul> </li>
+                <li>Magazines <i class="fa  fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-7</li>
+                    <li>Sub Menu-7</li>
+                    <li>Sub Menu-7</li>
+                    <li>Sub Menu-7</li>
+                  </ul> </li>
+                  <li>Auto Accessories <i class="fa  fa-angle-right"></i>
+                    <ul>
+                      <li>Sub Menu-8</li>
+                      <li>Sub Menu-8</li>
+                      <li>Sub Menu-8</li>
+                      <li>Sub Menu-8</li>
+                    </ul> </li>
+                    <li>Movies and Music <i class="fa  fa-angle-right"></i>
+                      <ul>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                      </ul> </li>
+        <li>Video and Games <i class="fa  fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-10</li>
+            <li>Sub Menu-10</li>
+            <li>Sub Menu-10</li>
+            <li>Sub Menu-10</li>
+          </ul>
+        </li>
+        <li>Home and Kitchen<i class="fa  fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-11</li>
+            <li>Sub Menu-11</li>
+            <li>Sub Menu-11</li>
+            <li>Sub Menu-11</li>
+          </ul>
+        </li>
+        <li>Furniture <i class="fa  fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-12</li>
+            <li>Sub Menu-12</li>
+            <li>Sub Menu-12</li>
+            <li>Sub Menu-12</li>
+          </ul>
+        </li>
+        <li>Grocery <i class="fa  fa-angle-right"></i>
+          <ul>
+            <li>Sub Menu-13</li>
+            <li>Sub Menu-13</li>
+            <li>Sub Menu-13</li>
+            <li>Sub Menu-13</li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      <div class="slider">
+        <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://imgs.search.brave.com/uzrnHvfxct2yxGTXLMRdq8lWUpQkR0jx_IwpTVeQOg8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9k/ZWxpY2lvdXMtcGFz/dGEtcGxhdGVfMjMt/MjE1MDY5MDcxMy5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgs.search.brave.com/-HYlZBiA7pxCusAKfk_k-uSG08eIxozIwFNIMgTPSZ4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU1/Mzg1NzAxL3Bob3Rv/L2NvdXBsZS1hdC1z/dXBlcm1hcmtldC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/cTBNbGpqVzlCbjBq/bHJXZmNJOG5DT25m/cTJKSEZPVWx3SVlR/a29oNFJ6bz0" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgs.search.brave.com/EcBJXFigqmnZ-R7vp9djvMV1MVE9DfDiCzzHkK866lk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjM5/Njk3MDI0L3Bob3Rv/L2ludGVyaW9yLWlt/YWdlLW9mLWEtY29u/dGVtcG9yYXJ5LWxp/dmluZy1yb29tLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1n/ci0xWkxrRzQ2UzFy/YTI4VHhSNEZSdExl/QnZOU25weXR0elJx/c1c1QkZjPQ" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgs.search.brave.com/AXnVSxxQ7vh-0EgvmQkG6G84NT0vhzC9VoFv7EnpBdg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9v/bmxpbmUtZmFzaGlv/bi1zaG9wcGluZy13/aXRoLWxhcHRvcF8y/My0yMTUwNDAwNjMw/LmpwZz9zaXplPTYy/NiZleHQ9anBn" class="d-block w-100" >
+            </div>
+          </div>
+       
+      
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+    <li data-target="#slider" data-slide-to="2"></li>
+    <li data-target="#slider" data-slide-to="3"></li>
+  </ol>
+        </div>
+      </div>
+  </section>
+
+
+  <!--featured-categories -->
+  <section class="featured-categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNob2VzfGVufDB8fDB8fHww">
+        </div>
+        <div class="col-md-4">
+          <img src="https://imgs.search.brave.com/_KrCx4KnMgGe0YjRuwTlRO8oxPh1lDCR4Ck4lxmxIGs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MjQ2Nzg2MDYzNzAt/YTQ3YWQyNWNiODJh/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4Tkh4/OGFHVmhaSEJvYjI1/bGMzeGxibnd3Zkh3/d2ZIeDhNQT09Jnc9/MTAwMCZxPTgw.jpeg">
+        </div>
+        <div class="col-md-4">
+          <img src="https://imgs.search.brave.com/edmomaRzHl-TVgrOVzcVucqDK01EJpRlIcCsm3XfZKM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDk1ODczMTIyMDgt/Y2VhNTRiZTk2OWU3/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4T0h4/OGQyRjBZMmhsYzN4/bGJud3dmSHd3Zkh4/OE1BPT0mdz0xMDAw/JnE9ODA.jpeg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- on sale product -->
+  <section class="on-sale">
+    <div class="container">
+      <div class="title-box">
+        <h2>On Sale</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="product-top">
+           <a href="product.html" ><img src="https://imgs.search.brave.com/afrvvDdZioDvimlCNPCC1g4bOVRMVNacTzVMxfyjGzc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFTUG9YYTVndEwu/anBn"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Smart Watch</h3>
+            <h5>$40.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" ><img src="https://imgs.search.brave.com/xdc3NlupU0PwSImyXm3zPcy46l72M5rJRJSLBD6ORUE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzErWS1ISGtvVEwu/anBn"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Fitness Watch</h3>
+            <h5>$50.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" > <img src="https://imgs.search.brave.com/-2EasnOm9D3GsXj4uSGnbzj5V5pMZFQB6CxORqd5WRY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFNazJ4LUF2N0wu/anBn"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Formal Shoes</h3>
+            <h5>$400.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" ><img src="https://imgs.search.brave.com/30v_rSAUInJqANj0VhgFRZg5ggkStnzmW6BJSZZbTh0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jeHNi/YW5kcy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMTEv/SXRhbGlhbl9PaWx5/X0xlYXRoZXJfQXBw/bGVfV2F0Y2hfQmFu/ZF80ODB4NDgwLmpw/Zz92PTE2MDYyMjQw/MDg"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+      <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Leather Watch</h3>
+            <h5>$35.00</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- New Products -->
+  <section class="new-products">
+    <div class="container">
+      <div class="title-box">
+        <h2>New Arrivals</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" ><img src="https://imgs.search.brave.com/nRgDd0EHinNkSIX82PFlUa8A4FeFqKS4-atXQYQax2E/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgy/MjE4MzQyL3Bob3Rv/L2EtdHdvLWRvb3It/c2lsdmVyLXN0eWxp/c2gtZGlnaXRhbC1y/ZWZyaWdlcmF0b3Iu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUQ0VDVwOW95WmVR/eVg4NzhfZ1dGa1p2/aDEyZGMwMmZGRHBz/UTN4MkgxMW89"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Refrigerator</h3>
+            <h5>$550.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <img src="images/mixergrinder.jpeg">
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Bajaj Easy Mixer Grinder 500 W, 3 Jar</h3>
+            <h5>$55.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" ><img src="https://imgs.search.brave.com/LOtDY6MiaWRsG-IwEjUl_5-seQ-B-5GBpn1llRtndZw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9tb2Rlcm4td2Fz/aGluZy1tYWNoaW5l/LXdoaXRlLWJhY2tn/cm91bmRfMzkyODk1/LTEwNTY5OS5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw"></a>
+            <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Washing Machine</h3>
+            <h5>$350.00</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="product-top">
+            <a href="product.html" ><img src="https://imgs.search.brave.com/JXnaXZ0HlEGa9n0DcWtgfPiGL4_ysQ7eWv4PjTa9H0c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zaG9w/LnR0a3ByZXN0aWdl/LmNvbS9tZWRpYS9j/YXRhbG9nL3Byb2R1/Y3QvY2FjaGUvMTIw/NTJjZDBiNzFmZDIw/ZmU0ODM2YWMyOTZm/OTA4ODQvNC8xLzQx/OTU4LUlNRzEuanBn">
+            <div class="overlay-right"></a>
+              <button type="button" class="btn btn-secondary" title="Quick Shop">
+                <i class="fa fa-eye"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button type="button" class="btn btn-secondary" title="Add to cart">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Prestige Induction</h3>
+            <h5>$45.00</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="product-top">
+              <a href="product.html" ><img src="https://imgs.search.brave.com/zzVQB0dRQ6cil0DAGWqtX9c-G-2t8_cjVIp77zzIaXc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MDExNzYzL3Bob3Rv/L3Nob2VzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1peVJn/aWR6eDN6cWNGX1hT/UzlrY3JLYW0xaXkw/VVg5bE1GTUlCS3c3/WDJZPQ"></a>
+              <div class="overlay-right">
+                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                  <i class="fa fa-eye"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                  <i class="fa fa-heart-o"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <h3>Shoes</h3>
+            <h5>$30.00</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <a href="product.html" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB_6oONeevgZDJhRV8n3VTSjZqvQUuZq-wg&usqp=CAU"></a>
+              <div class="overlay-right">
+                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                  <i class="fa fa-eye"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                  <i class="fa fa-heart-o"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <h3>Shirt</h3>
+              <h5>$240.00</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <a href="product.html" ><img src="https://imgs.search.brave.com/sR2H2E2juIJg8XICxQ-UIhfOaKhpftMsYtFkPteaQKY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9q/ZWFuc18xMjAzLTgw/OTQuanBnP3NpemU9/NjI2JmV4dD1qcGc">
+              <div class="overlay-right"></a>
+                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                  <i class="fa fa-eye"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                  <i class="fa fa-heart-o"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <h3>Jeans</h3>
+              <h5>$340.00</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <a href="product.html" ><img src="https://imgs.search.brave.com/fQLZZRqanMRiiQGtS4jiu_Khvv_hTnjPlWparocSnJE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDg2Njc1MDg3NjQt/MzNjZjA3MjZiMTNh/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4Tkh4/OGNuVnVibWx1WnlV/eU1ITm9iMlY4Wlc1/OE1IeDhNSHg4ZkRB/PSZ3PTEwMDAmcT04/MA.jpeg">
+              <div class="overlay-right"></a>
+                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                  <i class="fa fa-eye"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to Wish list">
+                  <i class="fa fa-heart-o"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <h3>Sport Shoes</h3>
+              <h5>$345.00</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website features -->
+
+  <section class="website-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 feature-box">
+          <img src="https://imgs.search.brave.com/xKjftAP3XPDyDP0jk2nq8v1l1uTNZvnn_cLg52-cu4I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzQ1Lzk2Lzg1/LzM2MF9GXzQ1OTY4/NTA4X3BkVDZHa2ha/Tko1aFNRVXlNR1NI/SEY5U2hCNzhEM2t0/LmpwZw">
+          <div class="feature-text">
+            <p><b>100% Original Items</b> are available at company</p>
+          </div>
+        </div>
+        <div class="col-md-3 feature-box">
+          <img src="https://img.icons8.com/?size=48&id=YLEDAkrlWxq4&format=png">
+          <div class="feature-text">
+            <p><b>Return within 30 days</b> of recieving your order.</p>
+          </div>
+      </div>
+      <div class="col-md-3 feature-box">
+        <img src="https://img.icons8.com/?size=48&id=QuNmrRuf4Gjy&format=png">
+        <div class="feature-text">
+          <p><b>Get free delivery</b> of recieving your order.</p>
+        </div>
+    </div>
+    <div class="col-md-3 feature-box">
+      <img src="https://imgs.search.brave.com/rksCgZFb5OmAQP2PlBts7ATb7-nu3WYL8ZHk2HsrVLs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTAxOS8xMDE5/NzA5LnBuZw">
+      <div class="feature-text">
+        <p><b>Pay online through multiple </b>payment options (card payment/Net banking)</p>
+      </div>
+     </div>
+     </div>
+     </div>
+  </section>
+  <section class="footer">
+    <div class="container tex-center">
+      <div class="row">
+        <div class="col-md-3">
+          <h1>Useful Links</h1>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Return Policy</p>
+          <p>Discount Coupons</p>
+        </div>
+        <div class="col-md-3">
+          <h1>Company</h1>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Career</p>
+          <p>Affiliate</p>
+        </div>
+        <div class="col-md-3">
+          <h1>Follow Us On</h1>
+          <p><i class="fa fa-facebook-official"></i> Facebook</p>
+          <p><i class="fa fa-youtube-play"></i> Youtube</p>
+          <p><i class="fa fa-linkedin"></i> Linkedin</p>
+          <p><i class="fa fa-twitter"></i> Twitter</p>
+        </div>
+        <div class="col-md-3 footer-image" >
+          <h1>Download App</h1>
+          <img src="images/appicon.png">
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Developed By Arunendra Bhardwaj <i class="fa fa-heart-o"></i></p>
+    </div>
+  </section>
+  <script>
+    function openmenu(){
+      document.getElementById("side-menu").style.display="block";
+      document.getElementById("menu-btn").style.display="none";
+      document.getElementById("close-btn").style.display="block";
+    }
+    function closemenu(){
+      document.getElementById("side-menu").style.display="none";
+      document.getElementById("menu-btn").style.display="block";
+      document.getElementById("close-btn").style.display="none";
+    }
+  </script>
+    </body>
+    </html>
